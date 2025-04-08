@@ -2,64 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>This Domain is For Sale</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      padding: 0 1rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fff;
+      border-radius: 12px;
+      margin-top: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    h1 {
+      text-align: center;
+      color: #0070f3;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #0070f3;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005ec2;
+    }
+    .contact-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .contact-links a {
+      display: inline-block;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+    }
+    .email-btn {
+      background-color: #28a745;
+    }
+    .whatsapp-btn {
+      background-color: #25D366;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      background: #f2f2f2;
-      text-align: center;
-      padding: 1rem;
     }
-
-    .container {
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      max-width: 500px;
-      width: 100%;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #333;
-    }
-
-    p {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-      color: #666;
-    }
-
-    a.email {
-      display: inline-block;
-      font-weight: bold;
-      color: #ffffff;
-      background-color: #0070f3;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    a.email:hover {
-      background-color: #005ec2;
+    .whatsapp-btn img {
+      width: 20px;
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
     <h1>This Domain is For Sale</h1>
-    <p>We're accepting serious offers for this premium domain.<br/> Contact us for pricing or negotiation.</p>
-    <a class="email" href="mailto:youremail@example.com">Contact Us</a>
+    <p style="text-align:center;">Interested? Fill out the form and we'll contact you.</p>
+
+    <!-- Contact Form -->
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email or Phone" required />
+      <textarea name="message" placeholder="Optional Message..." rows="4"></textarea>
+      <button type="submit">Submit Inquiry</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-section">
+      <h3>Or Reach Out Directly</h3>
+      <div class="contact-links">
+        <a href="mailto:youremail@example.com" class="email-btn">Email Us</a>
+        <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+          WhatsApp
+        </a>
+      </div>
+    </div>
   </div>
+
 </body>
 </html>
