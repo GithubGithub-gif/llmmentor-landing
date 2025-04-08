@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>This Domain is For Sale</title>
+  <title>Domain for Sale</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
+      background: #0f172a;
+      color: #f1f5f9;
       padding: 0 1rem;
     }
     .container {
       max-width: 600px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      background: #fff;
-      border-radius: 12px;
-      margin-top: 2rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #1e293b;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     }
-    h1 {
+    h1, h3 {
       text-align: center;
-      color: #0070f3;
+      color: #38bdf8;
+    }
+    p {
+      text-align: center;
+      color: #cbd5e1;
     }
     form {
       display: flex;
@@ -33,22 +36,29 @@
       margin-top: 1.5rem;
     }
     input, textarea {
-      padding: 0.75rem;
-      border: 1px solid #ccc;
+      padding: 0.8rem;
+      border: none;
       border-radius: 8px;
       font-size: 1rem;
+      background: #334155;
+      color: #f1f5f9;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #94a3b8;
     }
     button {
-      background-color: #0070f3;
-      color: white;
+      background-color: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
       border: none;
       padding: 0.75rem;
       font-size: 1rem;
       border-radius: 8px;
       cursor: pointer;
+      transition: 0.3s;
     }
     button:hover {
-      background-color: #005ec2;
+      background-color: #0ea5e9;
     }
     .contact-section {
       margin-top: 2rem;
@@ -59,15 +69,15 @@
       margin: 0.5rem;
       text-decoration: none;
       color: white;
-      padding: 0.5rem 1rem;
+      padding: 0.6rem 1rem;
       border-radius: 6px;
     }
     .email-btn {
-      background-color: #28a745;
+      background-color: #10b981;
     }
     .whatsapp-btn {
       background-color: #25D366;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
     }
@@ -81,22 +91,23 @@
 
   <div class="container">
     <h1>This Domain is For Sale</h1>
-    <p style="text-align:center;">Interested? Fill out the form and we'll contact you.</p>
+    <p>Fill out the form and we’ll get in touch with you!</p>
 
     <!-- Contact Form -->
-    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+    <form action="https://formspree.io/f/mldjozaa" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email or Phone" required />
-      <textarea name="message" placeholder="Optional Message..." rows="4"></textarea>
+      <input type="email" name="email" placeholder="Your Email (required)" required />
+      <input type="text" name="phone" placeholder="Your Phone (optional)" />
+      <textarea name="message" placeholder="Message (optional)" rows="4"></textarea>
       <button type="submit">Submit Inquiry</button>
     </form>
 
     <!-- Contact Info -->
     <div class="contact-section">
-      <h3>Or Reach Out Directly</h3>
+      <h3>Prefer to reach out directly?</h3>
       <div class="contact-links">
-        <a href="mailto:youremail@example.com" class="email-btn">Email Us</a>
-        <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn">
+        <a href="mailto:gs06pta@gmail.com" class="email-btn">Email</a>
+        <a href="https://wa.me/919877550841" class="whatsapp-btn">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
           WhatsApp
         </a>
